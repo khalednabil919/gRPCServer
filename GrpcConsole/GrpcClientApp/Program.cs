@@ -10,7 +10,7 @@ var customerClient = new Customer.CustomerClient(channel);
 var result = await customerClient.GetCustomerInfoAsync(new CustomerFindModel
 {
     UserId = 1
-});
+}); 
 Console.WriteLine($"{result.FirstName} + {result.LastName }");
 
 var allCustomers = customerClient.GetAllCustomers(new AllCustomerModel());
